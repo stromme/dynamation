@@ -632,6 +632,10 @@ $(document).ready(function(){
       var animation_duration = $(this).data('animation-duration');
       var animation_delay = $(this).data('animation-delay');
 
+      if(!animation_type){
+        animation_type = 'fadeIn';
+      }
+
       if(animation_duration) {
         $(this).css('-moz-animation-duration', animation_duration+'s');
         $(this).css('-webkit-animation-duration', animation_duration+'s');
